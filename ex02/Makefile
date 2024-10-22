@@ -4,16 +4,18 @@ CC = c++
 
 CFLAGS = -Wall -Werror -Wextra
 
+DEBUG = -g
+
 SRCS = main.cpp
 
 OBJS = $(SRCS:.cpp=.o)
 
 $(NAME) : $(OBJS)
 	@echo Compiling...
-	@$(CC) $(CFLAGS) $^ -o $@
+	@$(CC) $(DEBUG) $(CFLAGS) $^ -o $@
 
 %.o:%.cpp
-	@$(CC) $(CFLAGS) -c $< -o $@
+	@$(CC) $(DEBUG) $(CFLAGS) -c $< -o $@
 
 all : $(NAME)
 
