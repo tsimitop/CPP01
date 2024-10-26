@@ -52,7 +52,7 @@ int	main(int argc, char **argv)
 	if(!newFile)
 		std::cout << argv[1] << ": newFile failed to open" << std::endl;
 
-	//copies content into filename.replace
+	//copies content into filename.replace while replacing if necessary
 	std::string line;
 	std::string str1 = argv[2];
 	std::string str2 = argv[3];
