@@ -37,20 +37,20 @@ int	main(int argc, char **argv)
 	}
 	std::ifstream inputFile(argv[1]);
 	if (!inputFile)
-		std::cout << argv[1] << " failed to open" << std::endl;
+		std::cout << argv[1] << ":inputFile failed to open" << std::endl;
 	std::string filenameReplaced = argv[1];
 	filenameReplaced += ".replace";
 
 	//empties filename.replace
 	std::ofstream tempFile(filenameReplaced, std::ios::trunc);
 	if(!tempFile)
-		std::cout << argv[1] << " failed to open" << std::endl;
+		std::cout << argv[1] << ": tempFile failed to open" << std::endl;
 	tempFile.close();
 
 	//opens filename.replace to append
 	std::ofstream newFile(filenameReplaced, std::ios::app);
 	if(!newFile)
-		std::cout << argv[1] << " failed to open" << std::endl;
+		std::cout << argv[1] << ": newFile failed to open" << std::endl;
 
 	//copies content into filename.replace
 	std::string line;
