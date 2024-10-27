@@ -27,14 +27,13 @@ void	Harl::complain(std::string level)
 
 	for(int i = 0; i < 4; i++)
 	{
-			// std::cout << "level " << level;
-			// std::cout << " levels[i] " << levels[i] << std::endl;
-			// std::cout << std::boolalpha << "BOOL: " << (levels[i] == level) << std::endl;
 		if(levels[i] == level)
 			(this->*ptr[i])();
 	}
 }
+
 // return_type (ClassName::*pointer_name)(argument_types) = &ClassName::member_function;
+
 Harl::Harl()
 {
 }
