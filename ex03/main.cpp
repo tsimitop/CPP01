@@ -1,10 +1,10 @@
 #include "HumanA.hpp"
 #include "HumanB.hpp"
 #include "Weapon.hpp"
-#define BRIGHT_MAGENTA  "\033[95m"	// Bright magenta (light magenta)
-#define CYAN    "\033[36m"			// Cyan
-#define GREY         "\033[90m"		// Grey (bright black text)
-#define RESET   "\033[0m"			// Reset to default color
+#define BRIGHT_MAGENTA	"\033[95m"	// Bright magenta (light magenta)
+#define CYAN			"\033[36m"	// Cyan
+#define GREY			"\033[90m"	// Grey (bright black text)
+#define RESET			"\033[0m"	// Reset to default color
 
 int main()
 {
@@ -12,7 +12,7 @@ int main()
 	Weapon aClub = Weapon("crude spiked club");
 	HumanA bob("Bob", aClub);
 	bob.attack();
-	aClub.setType("the shillelagh");
+	aClub.setType("shillelagh");
 	bob.attack();
 
 	std::cout << CYAN;
