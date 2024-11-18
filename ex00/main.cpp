@@ -3,8 +3,9 @@
 int	main(void)
 {
 	randomChump("HeapZombie");
-	Zombie* s_z = newZombie("StackZombie");
-	s_z->announce();
-	delete(s_z);
+	Zombie* stack_zombie = newZombie("StackZombie");
+
+	stack_zombie->announce();
+	delete(stack_zombie);
 	return (0);
 }
