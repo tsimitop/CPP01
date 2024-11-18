@@ -13,15 +13,15 @@ int	main(void)
 
 	//THE PROGRAM PRINTS
 	std::cout<< std::endl;
-	std::cout << "The memory address of the stringVAR is : " << &stringVAR << std::endl;
-	std::cout << "The memory address held by stringPTR is : " << stringPTR << std::endl;
-	std::cout << "The memory address held by stringREF is : " << &stringREF << std::endl;
+	std::cout << "The memory address of the stringVAR is :\t" << &stringVAR << std::endl;
+	std::cout << "The memory address held by stringPTR is :\t" << stringPTR << std::endl;
+	std::cout << "The memory address held by stringREF is :\t" << &stringREF << std::endl;
 
 	//VALUES
 	std::cout<< std::endl;
-	std::cout << "The value of the stringVAR is : " << stringVAR << std::endl;
-	std::cout << "The value pointed to by stringPTR is : " << *stringPTR << std::endl;
-	std::cout << "The value pointed to by stringREF is : " << stringREF << std::endl;
+	std::cout << "The value of the stringVAR is :\t\t" << stringVAR << std::endl;
+	std::cout << "The value pointed to by stringPTR is :\t" << *stringPTR << std::endl;
+	std::cout << "The value pointed to by stringREF is :\t" << stringREF << std::endl;
 
 	return (0);
 }
