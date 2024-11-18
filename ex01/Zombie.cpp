@@ -12,9 +12,10 @@ void	Zombie::announce(void)
 
 Zombie::Zombie()
 {
+	// std::cout << this->name << " has been created." << std::endl;
 }
 
 Zombie::~Zombie()
 {
-	std::cout << this->name << " has been destroyed." << std::endl;
+	// std::cout << this->name << " has been destroyed." << std::endl;
 }
