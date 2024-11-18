@@ -6,6 +6,7 @@ std::string	stringReplacer(std::string original, std::string unwanted, std::stri
 	int 			i = 0;
 	int 		start = 0;
 	std::string	replaced;
+
 	for (i = 0; i < original.size(); i++)
 	{
 		if(original.find(unwanted, i) != std::string::npos)
@@ -35,10 +36,14 @@ int	main(int argc, char **argv)
 		std::cout << "Invalid number of aruments. To run the program please provide: <filename> <string1> <string>" << std::endl;
 		return (0);
 	}
-	std::ifstream inputFile(argv[1]);
+
+	//opens input file
+	std::ifstream	inputFile(argv[1]);
 	if (!inputFile)
 		std::cout << argv[1] << ":inputFile failed to open" << std::endl;
-	std::string filenameReplaced = argv[1];
+
+	//filename,replace creation
+	std::string	filenameReplaced = argv[1];
 	filenameReplaced += ".replace";
 
 	//empties filename.replace
@@ -60,7 +65,7 @@ int	main(int argc, char **argv)
 	{
 		while (1)
 		{
-			if(line.size() && !line.empty() && (line.find(str1, 0) != std::string::npos)) // && line.find(str1, i) > -1 && !line.empty()
+			if(line.size() && !line.empty() && (line.find(str1, 0) != std::string::npos))
 				newFile << stringReplacer(line, str1, str2);
 			else
 				newFile << line;
