@@ -4,10 +4,10 @@
 
 typedef enum
 {
-    DEBUG,
-    INFO,
-    WARNING,
-    ERROR
+	DEBUG,
+	INFO,
+	WARNING,
+	ERROR
 } compLevel;
 
 class Harl
