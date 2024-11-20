@@ -65,7 +65,7 @@ int	main(int argc, char **argv)
 	{
 		while (1)
 		{
-			if(line.size() && !line.empty() && (line.find(str1, 0) != std::string::npos))
+			if(line.size() && (line.find(str1, 0) != std::string::npos)) //line.size() is same as !line.empty()
 				newFile << stringReplacer(line, str1, str2);
 			else
 				newFile << line;
