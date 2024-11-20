@@ -50,10 +50,10 @@ void	Harl::complain(std::string level)
 			(this->*ptr[2])();
 		case 3:
 			(this->*ptr[3])();
+		default:
+			std::cout << "No such level of complaint.\n";
 	}
 }
-
-// return_type (ClassName::*pointer_name)(argument_types) = &ClassName::member_function;
 
 Harl::Harl()
 {
