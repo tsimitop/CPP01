@@ -50,6 +50,7 @@ void	Harl::complain(std::string level)
 			(this->*ptr[2])();
 		case 3:
 			(this->*ptr[3])();
+			break;
 		default:
 			std::cout << "No such level of complaint.\n";
 	}
