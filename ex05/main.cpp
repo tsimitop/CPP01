@@ -2,16 +2,16 @@
 
 int	main(void)
 {
-	Harl complaints;
+	Harl	harlComplainalot;
 
 	//Proper complaints
-	complaints.complain("DEBUG");
-	complaints.complain("INFO");
-	complaints.complain("WARNING");
-	complaints.complain("ERROR");
+	harlComplainalot.complain("DEBUG");
+	harlComplainalot.complain("INFO");
+	harlComplainalot.complain("WARNING");
+	harlComplainalot.complain("ERROR");
 
 	//Not included complaint
-	complaints.complain("random");
+	harlComplainalot.complain("random");
 
 	return (0);
 }
