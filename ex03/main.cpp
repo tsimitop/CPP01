@@ -10,6 +10,7 @@ int main()
 {
 	std::cout << BRIGHT_MAGENTA;
 	Weapon aClub = Weapon("crude spiked club");
+	// Weapon redundantClub = Weapon("unreachable club");
 	HumanA bob("Bob", aClub);
 	bob.attack();
 	aClub.setType("shillelagh");
@@ -17,11 +18,14 @@ int main()
 
 	std::cout << CYAN;
 	Weapon bClub = Weapon("crude spiked club");
+	// Weapon differentClub = Weapon("new club");
 	HumanB jim("Jim");
 	jim.setWeapon(bClub);
 	jim.attack();
 	bClub.setType("gunstock war club");
 	jim.attack();
+	// jim.setWeapon(differentClub);
+	// jim.attack();
 	std::cout << GREY;
 
 	return (0);
